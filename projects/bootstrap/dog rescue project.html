@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--Trying to figure out how to maintain header and footer across all pages. Created a .js file, maybe try "beforecreat" in JQuery, but I'm not sure. Still trying to find the answer.-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!--<script src='dogRescue.js></script>-->
+    <style>
+    /*.jumbotron  {
+    background:  url(blackLab.jpg) no-repeat center;
+    background-size:    cover;
+        margin-top: 25px;
+        color:  floralwhite;
+        height: 225px;
+    }
+
+        #carousel-example-generic   {
+            width:  300px;
+            height: 200px;
+        }*/
+
+
+    </style>
+    <link rel="stylesheet"
+          href="dogRescue.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Help Save These Dogs Now!</h1>
+
+        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Available Adoptions</a></p>-->
+    </div>
+
+<form class="navbar-form navbar-right" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search Breed">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="profile.html">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Vaccinations.html">Vaccinations</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="SpayNeuter.html">Spay/Neuter</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Food.html">What To Feed Your Dog</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="Training.html">Training</a></li>
+            </ul>
+
+        </ul>
+    </li>
+
+</ul>
+    <div class="row">
+        <div class="col-lg-9">
+            <p>There is truly a problem today with the overwhelming numbers of dogs without homes.  We are here to help find help for these pups in their forever homes.</p>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="puppy4.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    <div class="item">
+                    <img src="puppy1.jpg" alt="...">
+                </div>
+                    <div class="item">
+                        <img src="puppy2.jpg" alt="...">
+                        </div>
+                    <div class="item">
+                        <img src="puppy3.jpg" alt="...">
+                        </div>
+                    <div class="item">
+                        <img src="puppy4.jpg" alt="...">
+                        </div>
+                    <div class="item">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    ...
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+
+        </div>
+        <div class="col-sm-3">
+
+            <div class="well well-sm">
+
+                <p>ipsem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur culpa, doloribus hic labore magnam, odit quae tempore totam ut vel, voluptatum! Accusamus debitis esse expedita fuga ipsum quasi quisquam?</p></div>
+        </div>
+    </div>
+    <!--<div class="well well-sm">...</div>-->
+</div>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>-->
+</body>
+</html>

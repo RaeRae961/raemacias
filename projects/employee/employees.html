@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src='script.js'></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            font-family:    sans-serif;
+        }
+
+        table td { padding: 5px ; border: 1px solid black;}
+
+
+        #edit_name  {
+            margin-left:    52px;
+            padding:    5px;
+        }
+        #edit_phone {
+            margin-left:    43px;
+            padding:    5px;
+        }
+        #edit_address   {
+            margin-left:    36px;
+            padding:    5px;
+        }
+        #edit_box   {
+            margin-top: 18px;
+            /* border:    thin;*/
+            border: solid darkblue;
+            width: 30%;
+            padding:    5px;
+            display:    none;
+           background: whitesmoke;
+         /*   visibility: hidden;*/
+        }
+      h1 {
+            color: darkblue;
+          margin-left:  85px;
+        }
+        /*.map {
+            width: 500px;
+            height: 400px;
+        }*/
+
+        #googleMap  {
+            width:500px;
+            height:380px;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+<h1>Employee List!</h1>
+<div id="employee_list"></div>
+
+<button id="add">Add Employee</button>
+
+<div id = "edit_box">
+
+
+</div>
+<!--<div id="map_canvas"></div>-->
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+{% include main_nav.html %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-7 col-md-offset-1">
+            {{ content }}
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+            {% include sidebar.html %}
+        </div>
+    </div>
+
+    <hr>
+
+</div>
+<!-- /.container -->
+
+{% include footer.html class="content" %}
+
+</body>
+
+</html>

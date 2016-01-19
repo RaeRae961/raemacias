@@ -1,0 +1,48 @@
+
+    h1  {
+    color: darkblue;
+    text-align: center;
+        }
+
+    body    {
+        background-color: lightblue;
+        margin: 75px;
+        margin-color: white;
+        border: solid 5px;
+        height: 1500px;
+        padding-left:   20px;
+
+       }
+
+   .entry   {
+       display:   block;
+       width: 145px;
+       height: 450px;
+       float: left;
+       /* this gave some interesting views, text overflow with sidebar scroll.
+       height: 300px;
+       overflow: auto;
+       */
+       color: darkblue;
+       text-align: center;
+
+   }
+
+    img {
+        border-radius: 10px;
+
+    }
+
+    p   {
+        padding:    8px;
+        text-align: justify;
+    }
+
+
+
+
+
+
+
+
+

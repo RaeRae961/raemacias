@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style>
+        h1  {
+            text-align: center;
+            text-color: darkgreen;
+            font-family:    arial;
+
+        }
+
+        body    {
+
+            background-color: darkseagreen;
+
+        }
+
+        #container {
+
+            background: #fff;
+            margin-left: 300px;
+            width: 700px;
+            height: 500px;
+        }
+
+        #button {
+            width:  150px;
+            height: 75px;
+            margin-left:    100px;
+            margin-top:     75px;
+            font-size:  14px;
+            font-weight:    bold;
+
+
+        }
+        .box    {
+            background-color: lightgrey;
+            height: 200px;
+            width:  200px;
+            margin-left:    400px;
+            margin-top: 60px;
+        }
+
+
+
+        div.picture1 {
+            width:200px; /*width of your image*/
+            height:200px; /*height of your image*/
+            background-image:url('broncos beer glasses 2012 2.jpg');
+            margin:0; /* If you want no margin */
+            padding:0; /*if your want to padding */
+        }
+
+    </style>
+    <title>Button and a Box</title>
+</head>
+<body>
+<h1>Button and a Box</h1>
+    <div id="container">
+        <button id="button">Push Me!</button>
+        <div class="box">
+            <div class="picture1">&nbsp;</div>
+
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script>
+   $(function ()    {
+       $('#button').on("click",clickhandler)
+   } )
+
+ function clickhandler ()   {
+     $('.box').slideToggle()
+
+ }
+
+</script>
+
+</body>
+</html>
+
+
+<!-- Ben's jquery code
+<script src="https://code.jquery.com/jquery-2.1.1.js"</script>
+    $(function()    {
+        $('button').on("click", function()      {
+            $('box').toggleClass('embiggin');
+
+            ) {}
+    })-->
+
+
+
