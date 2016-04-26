@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Javascript</title>  
+
+    <style type="text/css">
+
+    #main {
+        height: 95px;
+        font-size: 2em;
+        width: 330px;
+        background-color: beige;
+        border-radius: 5%;
+        text-align: center;
+        padding-top: 10px;
+        
+    }
+    .game   {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+        font-family: sans-serif;
+    }
+    #guess {
+        margin-left: 25%;
+        font-size:1.5em;
+        width: 75px;
+        text-align: center;
+    }
+    #checkGuess {
+       font-size: 1.5em;
+    }
+
+
+
+    
+    </style>
+
+
+</head>
+
+<body>
+    <span class="game">
+    <p id="main">Guess a number between 0 and 50!</p>
+
+    <p><input type="text" id="guess"> <button id="checkGuess">Guess!</button></p>
+
+</span>
+    
+
+    <script type="text/javascript">
+
+        document.getElementById("checkGuess").onclick = function()  {
+
+                var randomNumber = Math.random();
+
+                randomNumber = randomNumber * 51;
+
+                randomNumber = Math.floor(randomNumber);
+
+                if (document.getElementById("guess").value == randomNumber) {
+                    alert("Yes, you got it! It was " + randomNumber + ". Great job!");
+
+                } else {
+                    alert("Nope! The number was " + randomNumber);
+                }
+        }       
+
+    
+        
+
+    </script>
+	
+
+</body>
+
+</html>
+
+
